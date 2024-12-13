@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('logo200.png'); /* Ganti dengan nama file gambar latar belakang */
+    background-size: cover; /* Menyelaraskan gambar agar memenuhi layar */
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Mengatur transparansi latar belakang */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.game-area {
+    display: flex;
+}
+
+.canvas-container {
+    border: 2px solid #000;
+    border-radius: 5px;
+    position: relative;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px; /* Spacing between canvas and buttons */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px 0; /* Vertical spacing between buttons */
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.game-over {
+    display: none;
+    font-size: 24px;
+    color: rgb(236, 18, 167);
+    font-weight: bold;
+    margin-top: 20px;
+}
